@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    hi, {{name}}!
+</h1>
+<script language="javascript" type="text/javascript">
+  function buttonClick(){
+  var url = document.getElementById("inputURL").value;
+  window.location = url;
+  }
+</script>
+<body>
+URL: <input type="text" id="inputURL" name="inputURL" value=""><br>
+<input type="button" value="click" OnClick="buttonClick()"/>
+</form>
+</body>
+
+</p>
+
+{% endblock %}
